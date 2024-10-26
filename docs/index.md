@@ -59,6 +59,24 @@ experimental ATM:
 8. Configure your scenery_packs.ini file appropriately 
 9. Run X-Plane and choose a location for an ortho set you have downloaded
 
+
+## MacOS Setup
+
+All of below steps require running command in ``Ternimal`` app.
+
+1. Install [Homebrew](https://brew.sh/) if you don't have it yet.
+2. Install [FUSE for macOS](  ://osxfuse.github.io/) with command ``brew install --cask macfuse``.
+> Note: You need to enable FUSE in ``System Preferences`` -> ``Security & Privacy`` -> ``General`` -> ``Allow apps downloaded from:`` -> ``App Store and identified developers``. Watch some youtobe videos if you don't know how to do it.
+    
+3. Install&Run it
+``` shell
+./autoortho_ui
+```
+4. Optional: some of us needs manually mount
+``` shell
+./autoortho_cmd "/Users/dzou/X-Plane 12/autoOrtho/z_autoortho/scenery/z_ao_aus_pac" "/Users/dzou/X-Plane 12//Custom Scenery/z_ao_aus_pac"
+```
+(I might put a native plugin to do Step4)
 ---
 
 ## Requirements and Compatibility
